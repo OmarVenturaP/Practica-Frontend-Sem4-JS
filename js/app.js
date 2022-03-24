@@ -24,6 +24,7 @@ const fetchPokemon = () => {
                 document.getElementById("movesList").innerHTML = "";
                 document.getElementById("dataPlayer1").innerHTML = "";
                 document.getElementById("dataPlayer3").innerHTML = "";
+                
             }
             limpiar();
         } else {
