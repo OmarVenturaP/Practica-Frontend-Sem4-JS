@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&family=Shippori+Antique+B1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/estilos.css">
+    <script src="https://kit.fontawesome.com/b0ab042d33.js" crossorigin="anonymous"></script>
+    <title>Pokedex | API JS</title>
+    <link rel="icon" type="image/x-icon" class="icon-head" href="./assets/img/js-16.ico">
+</head>
+<body>
+    <header class="headerPokedex">
+        <h1 class="title">Created for Launch X</h1>
+        <img src="https://ianars.github.io/Pok-dex/images/pokedeex.png" alt="Pokedex Logo" class="pokedexImg" id="pokedexImg">
+    </header>
+    <section class="section-left">
+        <div class="background-poligon">
+        </div>
+        <div class="div-buttons-upper">
+                <button class="button-img-up1"></button>
+                <button class="button-img-up2"></button>
+                <button class="button-img-up3"></button>
+                <button class="button-img-up4"></button>
+            </div>
+            <div class="div-img-screen">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/800px-Pokebola-pokeball-png-0.png" alt="Pokemon" id="pokemonImg" class="pokemon-Img">
+                <h3 class="containerData nompok" id="pokeDataName"></h3>    
+                <h3 class="containerData idpk" id="pokeDataId"></h3>
+            </div>
+            <div class="div-bottom-buttons">
+                <button class="button-img1"></button>
+                <button class="button-img2"></button>
+                <button class="button-img3"></button>
+            </div>
+            <div class="div-input">
+                <input type="text" placeholder="Name or ID" id="pokeName" name="pokeName" class="inputPlayer">
+                <button onclick="fetchPokemon()" class="buttonInput"><i class="fa-solid fa-magnifying-glass iconInput"></i></button>
+            </div>
+            <div class="div-direction-buttons">
+                <button class="direction-buttons2"></button>
+            </div>
+    <section class="section-middle"></section>
+    </section>    
+    <section class="section-right">
+        <div id="screenData" class="screenData">
+            <h3 class="containerData" id="pokeDataError"><br></h3>
+            <p class="containerData" id="pokeDataType"><br></p>
+            <p class="containerData" id="pokeDataHability"><br></p>
+            <p class="containerData" id="pokeDataMoves"></p>
+            <div class="moves">
+                <ul class="movesList" id="movesList">
+                </ul>
+            </div>
+            <p class="containerData" id="pokeDataHeight"><br></p>
+            <p class="containerData" id="pokeDataWeight"><br></p>
+            
+        </div>
+            <div class="div-button-ten">
+                <button class="button-img-right">1 *+</button>
+                <button class="button-img-right">2 ABC</button>
+                <button class="button-img-right">3 DEF</button>
+                <button class="button-img-right">4 GHI</button>
+                <button class="button-img-right">5 JKL</button>
+                <button class="button-img-right">6 MNO</button>
+                <button class="button-img-right">7 PQRS</button>
+                <button class="button-img-right">8 TUV</button>
+                <button class="button-img-right">9 WXYZ</button>
+                <button class="button-img-right">0 #-</button>
+            </div>
+            <div class="div-bottom">
+                <button class="button-img-right1"></button>
+                <button class="button-img-right1"></button>
+                <button class="button-img-right2"></button>
+                <button class="button-img-right2"></button>
+                <button class="button-img-right3"></button>
+            </div>
+            <div class="div-bottom2">
+                <button id="dataPlayer1" class="dataPlayer1 containerData"></button>
+                <button id="dataPlayer2" class="dataPlayer2 containerData"></button>
+                <button id="dataPlayer3" class="dataPlayer3 containerData"></button>
+            </div>
+    </section>
+</body>
+<footer>
+    <script src="./js/app.js"></script>
+</footer>
+</body>
+</html>
