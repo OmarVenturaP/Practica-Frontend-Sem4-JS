@@ -22,6 +22,8 @@ const fetchPokemon = () => {
                 document.getElementById("pokeDataHability").innerHTML = "";
                 document.getElementById("pokeDataMoves").innerHTML = "";
                 document.getElementById("movesList").innerHTML = "";
+                document.getElementById("dataPlayer1").innerHTML = "";
+                document.getElementById("dataPlayer3").innerHTML = "";
             }
             limpiar();
         } else {
@@ -84,17 +86,3 @@ const pokemonImage = (url) => {
     const pokemonPhoto = document.getElementById("pokemonImg");
     pokemonPhoto.src = url;
 }
-// // Movimientos
-// const PokeMoves = document.getElementById("moves-list");
-
-// const printPokeMoves = (data) => {
-//     let moves = data.moves;
-//     PokeMoves.innerHTML = "";
-
-//     for (let i = 0; i < moves.length; i++) {
-//         const move = document.createElement("li");
-//         PokeMoves.appendChild(move);
-
-//         move.innerText = moves[i].move.name;
-//     }
-// }
