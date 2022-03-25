@@ -154,8 +154,8 @@ body {
 }
 .buttonInput i {
     font-size: 20px;
-    color: rgba(255, 255, 255, 0.479)
-    ;
+    color: rgba(255, 255, 255, 0.479);
+    cursor: pointer;
 }
 .button-img {
     width: 20%;
